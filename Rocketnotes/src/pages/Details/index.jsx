@@ -1,9 +1,12 @@
-import "./styles.css"
+import { Container } from "./styles"
 
 export function Details () {
 
 
   return (
-    <h1> Xis Salada</h1>
+    <Container>
+      <h1> Xis Salada</h1>
+    </Container>
+    
   )
 }
