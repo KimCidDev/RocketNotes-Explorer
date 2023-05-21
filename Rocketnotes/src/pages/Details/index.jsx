@@ -1,4 +1,6 @@
-import { Container } from "./styles"
+import { Container } from "./styles";
+
+import { Button } from "../../components/Button"
 
 export function Details () {
   
@@ -7,9 +9,11 @@ export function Details () {
       <h1> Xis Salada</h1>
 
 
-
+      <Button />
       {/*<div class="box"></div>*/}
-    </Container>
+    </Container> 
+
+
     
   )
 }
