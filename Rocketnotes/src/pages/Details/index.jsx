@@ -16,7 +16,7 @@ export function Details () {
       <Button title="Xis vegano"/>  
       <div class="box"></div>*/}
 
-      <Button title="Xis vegano"/>
+      <Button title="Voltar"/>
     </Container> 
 
 
