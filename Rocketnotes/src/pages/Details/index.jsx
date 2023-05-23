@@ -1,4 +1,4 @@
-import { Container } from './styles';
+import { Container, Links } from './styles';
 
 import { Header } from '../../components/Header';
 import { Button } from '../../components/Button';
@@ -12,11 +12,18 @@ export function Details () {
       <Header />
 
       <Section title="links úteis">
-        <ul>
-          <li>xisSalada</li>
-          <li>xisBacon</li>
-          <li>xisCamarão</li>
-        </ul>
+        <Links>
+        <li>
+          <a href="">https://www.globoesporte.com/gremio</a>
+          </li>
+        <li>
+          <a href="">https://www.folha.com.br</a>
+          </li>
+        <li>
+          <a href="">https://www.notion.so</a>
+          </li>
+
+        </Links>
       </Section>
 
       <Button title="Voltar" />
