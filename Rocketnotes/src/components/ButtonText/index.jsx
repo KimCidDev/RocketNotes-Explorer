@@ -1,9 +1,9 @@
 import { Container } from './style';
 
-export function ButtonText({title}) {
+export function ButtonText({title, ...rest}) {
   return (
-    <Container>
-      <a href="">{title}</a>
+    <Container type="button" {...rest}>
+      {title}
    </Container>
   )
 }

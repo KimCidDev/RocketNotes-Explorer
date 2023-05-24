@@ -1,10 +1,11 @@
 import styled from 'styled-components';
 
-export const Container = styled.span`
-  background-color: ${({ theme }) => theme.COLORS.BACKGROUND_800};
-  display: flex;
-  justify-content: right;
-  margin: 20px 40px 0 0;
+export const Container = styled.button`
+  background: none;
+  color: ${({ theme }) => theme.COLORS.ORANGE};
+
+  border: none;
+  font-size: 16px;
 
   a {
     text-decoration: none;
