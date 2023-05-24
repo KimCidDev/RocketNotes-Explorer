@@ -1,11 +1,17 @@
 import { Container, Brand, Menu, Search, Content, Newnote } from './styles';
 
+import { Header } from '../../components/Header';
+
 export function Home () {
 
+  return (
+  
   <Container>
     <Brand>
     <h1>RocketNotes</h1>
     </Brand>
+
+  <Header />
 
   <Menu>
 
@@ -19,12 +25,12 @@ export function Home () {
 
   </Content>
 
-  </Container>
+  
 
-  <Newnote>
+  <Newnote> 
     
   </Newnote>
 
-
-
-}
+  </Container>
+  );
+};

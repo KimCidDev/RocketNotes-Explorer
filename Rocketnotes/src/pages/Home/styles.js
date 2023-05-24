@@ -1,13 +1,43 @@
-import styled from 'styled-content';
+import styled from 'styled-components';
 
-export const Container = styled.div``;
+export const Container = styled.div`
+  width: 100%;
+  height: 100vh;
 
-export const Brand = styled.h1``;
+  display: grid;
+  grid-template-columns: 250px auto;
+  grid-template-rows: 105px 128px auto 64px;
+  grid-template-areas:
+    'brand header'
+    'menu search'
+    'menu content'
+    'newnote content';
 
-export const Menu = styled.div``;
+  background-color: ${({ theme }) => theme.COLORS.BACKGROUND_800};
+`;
 
-export const Search = styled.div``;
+export const Brand = styled.div`
+  grid-area: brand;
+  background-color: red;
+`;
 
-export const Content = styled.div``;
+export const Menu = styled.ul`
+  grid-area: menu;
+  background-color: blue;
+`;
 
-export const Newnote = styled.div``;
+export const Search = styled.div`
+  grid-area: search;
+  background-color: green;
+`;
+
+export const Content = styled.div`
+  grid-area: content;
+  background-color: purple;
+`;
+
+export const Newnote = styled.button`
+  grid-area: newnote;
+  background-color: orange;
+  border: none;
+`;
