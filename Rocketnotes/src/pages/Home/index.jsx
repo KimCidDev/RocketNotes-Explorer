@@ -16,12 +16,14 @@ export function Home () {
   </Search>
 
   <Content>
-    
+
   </Content>
 
   </Container>
 
-
+  <Newnote>
+    
+  </Newnote>
 
 
 
