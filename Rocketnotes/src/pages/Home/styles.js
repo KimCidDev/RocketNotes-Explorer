@@ -45,23 +45,32 @@ export const Menu = styled.ul`
 
   > li {
     margin-bottom: 24px;
-
-    color: blue;
   }
 `;
 
 export const Search = styled.div`
   grid-area: search;
-  background-color: green;
+  background-color: ${({ theme }) => theme.COLORS.BACKGROUND_800};
 `;
 
 export const Content = styled.div`
   grid-area: content;
-  background-color: purple;
+  background-color: ${({ theme }) => theme.COLORS.BACKGROUND_800};
 `;
 
 export const Newnote = styled.button`
   grid-area: newnote;
-  background-color: orange;
+
   border: none;
+  background-color: ${({ theme }) => theme.COLORS.ORANGE};
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: bold;
+  color: ${({ theme }) => theme.COLORS.GRAY_100};
+
+  svg {
+    margin-right: 8px;
+  }
 `;

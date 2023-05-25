@@ -1,7 +1,9 @@
 import { Container, Brand, Menu, Search, Content, Newnote } from './styles';
 
+import { AiOutlinePlus } from 'react-icons/ai'
 import { Header } from '../../components/Header';
 import { ButtonText } from '../../components/ButtonText';
+import { Button } from '../../components/Button';
 
 export function Home () {
 
@@ -33,7 +35,8 @@ export function Home () {
   
 
   <Newnote> 
-    
+  <AiOutlinePlus />
+    Criar Nota
   </Newnote>
 
   </Container>
