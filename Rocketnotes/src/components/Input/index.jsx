@@ -1,12 +1,10 @@
 import { Container } from './styles'
 
-export function Section ( { title, children } ) {
+export function Input ({icon, ...rest}) {
   return (
     <Container>
 
-    <h2> {title} </h2>
-    {children}
-
+      <input {...rest} />
 
     </Container>
   )
