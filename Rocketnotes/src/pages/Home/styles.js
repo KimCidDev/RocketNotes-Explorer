@@ -55,7 +55,8 @@ export const Search = styled.div`
 
 export const Content = styled.div`
   grid-area: content;
-  background-color: ${({ theme }) => theme.COLORS.BACKGROUND_800};
+  padding: 0 64px;
+  overflow-y: scroll;
 `;
 
 export const Newnote = styled.button`

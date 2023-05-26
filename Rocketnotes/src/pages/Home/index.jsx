@@ -4,7 +4,9 @@ import { AiOutlinePlus } from 'react-icons/ai'
 import { RiSearchEyeLine } from 'react-icons/ri'
 import { Header } from '../../components/Header';
 import { ButtonText } from '../../components/ButtonText';
+import { Section } from '../../components/Section';
 import { Input } from '../../components/Input';
+import { Note } from '../../components/Note';
 
 export function Home () {
 
@@ -30,7 +32,17 @@ export function Home () {
   </Search>
 
   <Content>
+    <Section title="Minhas Notas"> 
+      <Note data={{
+        title: 'React',
+        tags: [
+          {id: '1', name: 'React'},
+          {id: '2', name: 'Rockeseat'}
+        ]
+      }}
+      />
 
+    </Section>
   </Content>
   
 
