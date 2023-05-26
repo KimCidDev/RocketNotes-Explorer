@@ -1,5 +1,7 @@
 import { Container } from './styles';
 
+import { Tag } from '../../components/Tag'
+
 export function Note (data, ...rest) {
   return (
     <Container {...rest}>
@@ -14,7 +16,7 @@ export function Note (data, ...rest) {
               {tag.name}
             </span>
           })
-          }
+        }
         </footer>
       }
 
