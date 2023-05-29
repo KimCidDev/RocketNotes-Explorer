@@ -1,36 +1,11 @@
-import { Container, Brand, LoginHeader, BackgroundImg } from './styles';
-
-import { Input } from '../../components/Input';
-import { ButtonText } from '../../components/ButtonText';
-import { Button } from '../../components/Button';
-
+import { Container } from './styles';
 
 export function SignIn () {
   return (
     <Container>
-      <Brand />
+      <Form>
 
-      <LoginHeader>
-
-      </LoginHeader>
-
-      <Input>
-      
-      </Input>
-      <Input>
-      
-      </Input> 
-
-      <Button />
-
-      <ButtonText />
-
-      <BackgroundImg>
-
-      </BackgroundImg>
-
-
-
+      </Form>
     </Container>
   )
 }
