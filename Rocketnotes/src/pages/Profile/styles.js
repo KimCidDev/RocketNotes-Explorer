@@ -24,4 +24,47 @@ export const Container = styled.div`
 export const Form = styled.form`
   max-width: 340px;
   margin: 30px auto;
+
+  > div:nth-child(4) {
+    margin-top: 24px;
+  }
+`;
+
+export const Avatar = styled.div`
+  position: relative;
+  margin: -124px auto 32px;
+
+  height: 186px;
+  width: 186px;
+
+  > img {
+    height: 186px;
+    width: 186px;
+    border-radius: 50%;
+  }
+
+  > label {
+    width: 48px;
+    height: 48px;
+    background-color: ${({ theme }) => theme.COLORS.ORANGE};
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    bottom: 7px;
+    right: 7px;
+
+    input {
+      display: none;
+    }
+
+    svg {
+      height: 20px;
+      width: 20px;
+      color: ${({ theme }) => theme.COLORS.BACKGROUND_800};
+    }
+  }
 `;
