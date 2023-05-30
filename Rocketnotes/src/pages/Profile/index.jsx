@@ -1,34 +1,42 @@
-import { Container, ProfilePic } from './styles';
-import { Form } from '../SignIn/styles.js'
-import { Input } from '../../components/Input'
+import {  FiMail, FiLock, FiUserPlus, FiArrowLeft } from 'react-icons/fi'
 
-import { FiMail, FiLock, FiUserPlus } from 'react-icons/fi'
+import { Container, Form } from './styles';
+import { Input } from '../../components/Input'
+import { Button } from '../../components/Button'
 
 export function Profile () {
   return (
     <Container>
-      <ProfilePic>
-        <button></button>
-      </ProfilePic>
+      <header>
+        <a href="/">
+          <FiArrowLeft />
+        </a>
+      </header>
 
       <Form>
-        <h2>Faça seu login</h2>
         <Input 
-        placeholder="email"
+        placeholder="Nome"
         type="text"
-        icon={FiMail}/>
-
+        icon={FiUserPlus}
+        />
         <Input 
-        placeholder="Senha"
+        placeholder="Email"
+        type="text"
+        icon={FiMail}
+        />
+        <Input 
+        placeholder="Senha Atual"
         type="password"
-        icon={FiLock}/>
-
+        icon={FiLock}
+        />
         <Input 
-        placeholder="email"
-        type="text"
-        icon={FiMail}/>
-      </Form>
-    </Container>
-  )
+        placeholder="Senha Antiga"
+        type="password"
+        icon={FiLock}
+        />
+        <Button title="XisSalada" />
+       </Form>
 
-}
+    </Container>
+  );
+};
