@@ -4,8 +4,7 @@ import { AppRoutes } from './app.routes';
 
 export function Routes () {
   return (
-    <BrowserRouter>
-    
+    <BrowserRouter>    
     <AppRoutes />
     </BrowserRouter> 
   )
