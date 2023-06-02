@@ -1,5 +1,6 @@
 import { Container, Form } from './styles';
-import {  FiMail, FiLock, FiUserPlus, FiArrowLeft, FiCamera } from 'react-icons/fi'
+
+import { Link } from 'react-router-dom';
 
 import { Header } from '../../components/Header';
 import { ButtonText } from '../../components/ButtonText';
@@ -18,7 +19,9 @@ export function New () {
       <Form>
       <header>
       <h1> Criar Nota </h1>
-      <ButtonText title='Voltar'/>
+      <Link to='/'>
+      <ButtonText title="Voltar"></ButtonText>
+      </Link>
       </header>
 
       <Input 
@@ -43,7 +46,9 @@ export function New () {
         </div>
         </Section>
 
-        <Button title="XisSalada"/>
+        <Link to='/details/:id'>
+        <Button title="Criar"/>
+        </Link>
       </Form>
       </main>
 

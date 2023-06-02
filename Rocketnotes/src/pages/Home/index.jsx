@@ -46,8 +46,8 @@ export function Home () {
     </Section>
   </Content>
   
-
-  <Newnote> 
+ 
+  <Newnote to='/new'> 
   <AiOutlinePlus />
     Criar Nota
   </Newnote>

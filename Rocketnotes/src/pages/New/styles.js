@@ -31,5 +31,6 @@ export const Form = styled.form`
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
   }
 `;
