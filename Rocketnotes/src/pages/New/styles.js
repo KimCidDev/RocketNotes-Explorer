@@ -8,6 +8,12 @@ export const Container = styled.div`
   grid-template-rows: 105px auto;
   grid-template-areas: 'header' 'content';
 
+  > main {
+    grid-area: content;
+    overflow-y: auto;
+    padding-bottom: 36px;
+  }
+
   .tags {
     display: flex;
     justify-content: space-between;

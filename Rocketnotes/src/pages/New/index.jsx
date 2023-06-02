@@ -7,12 +7,14 @@ import { Input } from '../../components/Input';
 import { TextArea } from '../../components/TextArea';
 import { NoteItem } from '../../components/NoteItem';
 import { Section } from '../../components/Section';
+import { Button } from '../../components/Button';
 
 export function New () {
   return (
     <Container>
       <Header />
 
+      <main>
       <Form>
       <header>
       <h1> Criar Nota </h1>
@@ -37,16 +39,13 @@ export function New () {
         <Section title="Marcadores">
         <div className="tags" >
         <NoteItem value="react"/>
-        <NoteItem value="react"/>
-        <NoteItem value="react"/>
-        <NoteItem value="react"/>
-        <NoteItem value="react"/>
-        <NoteItem value="react"/>
         <NoteItem isNew placeholder="Nova Tag"/>
         </div>
         </Section>
 
+        <Button title="XisSalada"/>
       </Form>
+      </main>
 
     </Container>
 
