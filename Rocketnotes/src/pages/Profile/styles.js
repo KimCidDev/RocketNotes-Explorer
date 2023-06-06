@@ -25,6 +25,7 @@ export const Form = styled.form`
   max-width: 340px;
   margin: 30px auto;
 
+
   > div:nth-child(4) {
     margin-top: 24px;
   }
@@ -56,6 +57,8 @@ export const Avatar = styled.div`
     position: absolute;
     bottom: 7px;
     right: 7px;
+
+    cursor: pointer;
 
     input {
       display: none;

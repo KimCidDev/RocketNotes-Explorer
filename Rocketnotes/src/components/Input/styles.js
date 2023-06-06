@@ -22,7 +22,7 @@ export const Container = styled.div`
     color: ${({ theme }) => theme.COLORS.WHITE};
     border: 0;
 
-    &:placeholder {
+    ::placeholder {
       color: ${({ theme }) => theme.COLORS.GRAY_300};
     }
   }
